@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/starter-template.css" rel="stylesheet">
+    <link href="css/docs.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+<header class="navbar navbar-static-top bs-docs-nav" id="top">
+    <div class="container">
+        <div class="page-header">
+            <h1>CS-784
+                <small>Data models and languages</small>
+            </h1>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="jumbotron" style="background-color:#444444 !important">
+        <h1 style="color: white">Best Bikes</h1>
+
+        <p style="color: white">Buying and selling of used bikes is a huge industry. For this project, we crawl data
+            from 2 of the most
+            popular Indian websites that let you buy and sell used bikes - <a href="http://www.bikedekho.com"style="color: #5bc0de">BikeDekho</a> and
+            <a href="http://www.bikewale.com" style="color: #5bc0de">BikeWale </a>. Our goal is to
+            extract relevant information from the both the websites and match them to find if the exact same bike is
+            being sold at a cheaper price on the other website. We have crawled 9216 Bikewale postings and about 10000
+            BikeDekho listings.</p>
+
+        <p><a class="btn btn-primary btn-lg" href="#deliverable1" role="button">Learn more</a></p>
+    </div>
+    <div class="container bs-docs-container">
+        <div class="row">
+            <div class="col-md-9" role="main">
+                <div class="bs-docs-section">
+                    <h1 id="deliverable1" class="page-header">Deliverable-1</h1>
+                    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                        <div class="btn-group" role="group">
+                            <a type="button" class="btn btn-success" href="http://pages.cs.wisc.edu/~shaleen/CS784/Data_model_page/html/BikeWale/html/" target="_blank">HTML Pages from website A</a>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <a type="button" class="btn btn-info" href="http://pages.cs.wisc.edu/~shaleen/CS784/Data_model_page/html/BikeWale/Bikewale.csv" target="_blank">CSV generated from A</a>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <a type="button" class="btn btn-success" href="http://pages.cs.wisc.edu/~shaleen/CS784/Data_model_page/html/BikeDekho/html/" target="_blank">HTML Pages from website B</a>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <a type="button" class="btn btn-info" href="http://pages.cs.wisc.edu/~shaleen/CS784/Data_model_page/html/BikeDekho/BikeDekho.csv" target="_blank">CSV generated from B</a>
+                        </div>
+                    </div>
+                    <h2>Table schema for website A <a href="http://www.bikewale.com" class="btn btn-primary">Bikewale.com</a></h2>
+                    <ul class="list-group">
+                        <li class="list-group-item"><span class="badge">ID</span>id</li>
+                        <li class="list-group-item"><span class="badge">varchar</span>bike_name</li>
+                        <li class="list-group-item"><span class="badge">varchar</span>city_posted</li>
+                        <li class="list-group-item"><span class="badge">int</span>km_driven</li>
+                        <li class="list-group-item"><span class="badge">varchar</span>color</li>
+                        <li class="list-group-item"><span class="badge">varchar</span>fuel_type</li>
+                        <li class="list-group-item"><span class="badge">int</span>price</li>
+                        <li class="list-group-item"><span class="badge">int</span>model_year</li>
+                        <li class="list-group-item"><span class="badge">varchar</span>owner_type</li>
+                        <li class="list-group-item"><span class="badge">varchar</span>url</li>
+                    </ul>
+                    <h2>Table schema for website B <a href="http://www.bikedekho.com" class="btn btn-primary">BikeDekho.com</a></h2>
+                    <ul class="list-group">
+                        <li class="list-group-item"><span class="badge">ID</span>id</li>
+                        <li class="list-group-item"><span class="badge">varchar</span>bike_name</li>
+                        <li class="list-group-item"><span class="badge">varchar</span>city_posted</li>
+                        <li class="list-group-item"><span class="badge">int</span>km_driven</li>
+                        <li class="list-group-item"><span class="badge">varchar</span>color</li>
+                        <li class="list-group-item"><span class="badge">varchar</span>fuel_type</li>
+                        <li class="list-group-item"><span class="badge">int</span>price</li>
+                        <li class="list-group-item"><span class="badge">int</span>model_year</li>
+                        <li class="list-group-item"><span class="badge">varchar</span>owner_type</li>
+                        <li class="list-group-item"><span class="badge">varchar</span>url</li>
+                    </ul>
+                    <h1 id="deliverable2" class="page-header">Deliverable-2</h1>
+                    <div>
+                        In-Progress
+                    </div>
+                    <h1 id="teamMembers" class="page-header">Team Members</h1>
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="col-md-6">
+                                Ali Hitawala <br/>
+                                alihitawala@cs.wisc.edu<br/>
+                                +1 608-609-7432<br/>
+                            </div>
+                            <div class="col-md-6">
+                                Shaleen Deep<br/>
+                                shaleen@cs.wisc.edu<br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3" role="complementary">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+                    <ul class="nav bs-docs-sidenav">
+                        <li>
+                            <a href="#deliverable1">Deliverable-1</a>
+                        </li>
+                        <li>
+                            <a href="#deliverable2">Deliverable-2</a>
+                        </li>
+                        <li>
+                            <a href="#teamMembers">Team Members</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/docs.min.js"></script>
+</body>
+</html>
