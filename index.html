@@ -42,13 +42,14 @@
             being sold at a cheaper price on the other website. We have crawled 9216 Bikewale postings and about 10000
             BikeDekho listings.</p>
 
-        <p><a class="btn btn-primary btn-lg" href="#deliverable1" role="button">Learn more</a></p>
+        <p><a class="btn btn-primary btn-lg" href="#deliverable1" role="button">Deliverable</a></p>
     </div>
     <div class="container bs-docs-container">
         <div class="row">
             <div class="col-md-9" role="main">
                 <div class="bs-docs-section">
                     <h1 id="deliverable1" class="page-header">Deliverable-1</h1>
+                    <h2 id="dataextraction">Data Extraction</h2>
                     <div class="btn-group btn-group-justified" role="group" aria-label="...">
                         <div class="btn-group" role="group">
                             <a type="button" class="btn btn-success" href="http://pages.cs.wisc.edu/~shaleen/CS784/Data_model_page/html/BikeWale/html/" target="_blank">HTML Pages from website A</a>
@@ -63,35 +64,135 @@
                             <a type="button" class="btn btn-info" href="http://pages.cs.wisc.edu/~shaleen/CS784/Data_model_page/html/BikeDekho/BikeDekho.csv" target="_blank">CSV generated from B</a>
                         </div>
                     </div>
-                    <h2>Table schema for website A <a href="http://www.bikewale.com" class="btn btn-primary">Bikewale.com</a></h2>
-                    <ul class="list-group">
-                        <li class="list-group-item"><span class="badge">ID</span>id</li>
-                        <li class="list-group-item"><span class="badge">varchar</span>bike_name</li>
-                        <li class="list-group-item"><span class="badge">varchar</span>city_posted</li>
-                        <li class="list-group-item"><span class="badge">int</span>km_driven</li>
-                        <li class="list-group-item"><span class="badge">varchar</span>color</li>
-                        <li class="list-group-item"><span class="badge">varchar</span>fuel_type</li>
-                        <li class="list-group-item"><span class="badge">int</span>price</li>
-                        <li class="list-group-item"><span class="badge">int</span>model_year</li>
-                        <li class="list-group-item"><span class="badge">varchar</span>owner_type</li>
-                        <li class="list-group-item"><span class="badge">varchar</span>url</li>
-                    </ul>
-                    <h2>Table schema for website B <a href="http://www.bikedekho.com" class="btn btn-primary">BikeDekho.com</a></h2>
-                    <ul class="list-group">
-                        <li class="list-group-item"><span class="badge">ID</span>id</li>
-                        <li class="list-group-item"><span class="badge">varchar</span>bike_name</li>
-                        <li class="list-group-item"><span class="badge">varchar</span>city_posted</li>
-                        <li class="list-group-item"><span class="badge">int</span>km_driven</li>
-                        <li class="list-group-item"><span class="badge">varchar</span>color</li>
-                        <li class="list-group-item"><span class="badge">varchar</span>fuel_type</li>
-                        <li class="list-group-item"><span class="badge">int</span>price</li>
-                        <li class="list-group-item"><span class="badge">int</span>model_year</li>
-                        <li class="list-group-item"><span class="badge">varchar</span>owner_type</li>
-                        <li class="list-group-item"><span class="badge">varchar</span>url</li>
-                    </ul>
-                    <h1 id="deliverable2" class="page-header">Deliverable-2</h1>
                     <div>
-                        In-Progress
+                        <div class="col-md-6">
+                            <h2>Table schema for website A <a href="http://www.bikewale.com" class="btn btn-primary">Bikewale.com</a></h2>
+                            <ul class="list-group">
+                                <li class="list-group-item"><span class="badge">ID</span>id</li>
+                                <li class="list-group-item"><span class="badge">varchar</span>bike_name</li>
+                                <li class="list-group-item"><span class="badge">varchar</span>city_posted</li>
+                                <li class="list-group-item"><span class="badge">int</span>km_driven</li>
+                                <li class="list-group-item"><span class="badge">varchar</span>color</li>
+                                <li class="list-group-item"><span class="badge">varchar</span>fuel_type</li>
+                                <li class="list-group-item"><span class="badge">int</span>price</li>
+                                <li class="list-group-item"><span class="badge">int</span>model_year</li>
+                                <li class="list-group-item"><span class="badge">varchar</span>owner_type</li>
+                                <li class="list-group-item"><span class="badge">varchar</span>url</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h2>Table schema for website B <a href="http://www.bikedekho.com" class="btn btn-primary">BikeDekho.com</a></h2>
+                            <ul class="list-group">
+                                <li class="list-group-item"><span class="badge">ID</span>id</li>
+                                <li class="list-group-item"><span class="badge">varchar</span>bike_name</li>
+                                <li class="list-group-item"><span class="badge">varchar</span>city_posted</li>
+                                <li class="list-group-item"><span class="badge">int</span>km_driven</li>
+                                <li class="list-group-item"><span class="badge">varchar</span>color</li>
+                                <li class="list-group-item"><span class="badge">varchar</span>fuel_type</li>
+                                <li class="list-group-item"><span class="badge">int</span>price</li>
+                                <li class="list-group-item"><span class="badge">int</span>model_year</li>
+                                <li class="list-group-item"><span class="badge">varchar</span>owner_type</li>
+                                <li class="list-group-item"><span class="badge">varchar</span>url</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h1 id="deliverable2" class="page-header">Deliverable-2</h1>
+                    <h2 id="blocking">Blocking</h2>
+                    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                        <div class="btn-group" role="group">
+                            <a type="button" class="btn btn-info" href="#" target="_blank">Blocking explanation PDF</a>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <a type="button" class="btn btn-success" href="#" target="_blank">CSV data after blocking</a>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <a type="button" class="btn btn-warning" href="#" target="_blank">CSV complete</a>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <a type="button" class="btn btn-danger" href="#" target="_blank">IPython Notebook</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 id="blockingsteps">1. Blocking Steps</h3>
+                        <div>
+                            <p class="text-justify">
+                            The objective of this stage is to produce a candidate set after performing blocking operations. This is necessary because it is computationally very expensive to do a matching for all pairs. Our tableA has 9216 tuples and tableB had 10000 tuples. Therefore, a cartesian product of 9K x 10K is 9million which is a huge number of tuples. Therefore, we have a 4 stage blocking strategy.
+                            </p>
+                        </div>
+                        <h4 id="stage1">1.1 Stage 1</h4>
+                        <div>
+                        <p class="text-justify">
+                            In the first stage we used city_posted as feature on an equivalence blocker. This is a good beginning strategy because both the websites had the same city naming conventions and the textual data matched exactly. However, tableA had a lot of ’cities’ that were actually suburban areas (much like Redmond is a part of Seattle). Therefore, before doing this step, we had to performa cleaning step to ensure that we were matching on the same subset of cities. We created a list of cities that were unique and scrubbed the dataset to merge all the suburbs into the respective city. For example, ’Kalyan’ is a station within the city of Mumbai.
+                        </p>
+                        <h5>1.1.1 Cleaning of data</h5>
+                        <p class="text-justify ">
+                            We have listed the SQL queries below that we used to clean the data.
+                        </p>
+                        <pre class="prettyprint lang-sql">
+UPDATE Bikewale_clean
+set city_posted = ’Delhi'
+where city_posted
+in ('New Delhi' ,'Dadri' ,' Faridabad' ,'Ghaziabad' ,'Gurgaon' ,'Bahadurgarh' ,'Modi Nagar' ,'Noida');
+                        </pre>
+                        <pre class="prettyprint lang-sql">
+UPDATE Bikewale_clean
+set city_posted = ’Mumbai'
+where city_posted
+in ('Kalyan', 'Navi Mumbai', ' Panvel', 'Thane');
+                        </pre>
+                        <pre class="prettyprint lang-sql">
+UPDATE Bikewale_clean
+set city_posted = ’Bangalore'
+where city_posted
+in ('Hosur', 'Hoskote', 'Tumkur');
+                        </pre>
+                        <pre class="prettyprint lang-sql">
+UPDATE BikeDekho_clean
+set city_posted = ’Delhi'
+where city_posted
+in ('Delhi', 'Noida');
+                        </pre>
+                        <pre class="prettyprint lang-sql">
+UPDATE BikeDekho_clean
+set city_posted = ’Mumbai'
+where city_posted
+in ('Kalyan', 'Thane', ' Valsad', 'Dombilvli');
+                        </pre>
+                        <p class="text-justify">
+                            After the first blocking we reduced the tuple matches from 9 million to 5 million. However, this was too large since the maximum possible matches can only be as big as the size of the smaller table i.e 9216.
+                        </p>
+                        </div>
+                        <h4 id="stage2">1.2 Stage 2</h4>
+                        <div>
+                            <p class="text-justify">
+                                For the second stage, we did attribute equivalence blocking on the model year of the bike. This was straight forward as there were no missing values. This blocker reduced our candidate set from 5 million to 1.19 million.
+                            </p>
+                        </div>
+                        <h4 id="stage3">1.3 Stage 3</h4>
+                        <div>
+                            <p class="text-justify">
+                                For the third stage, we did a blackbox blocker on the distance driven on the bike. We figured a good estimate would be a difference of 1000 kilometeres because it is possible that a user can enter a new bike ad on a different website after some time, during which the bike could have been used more. This strategy used our candidate set to 68000 tuples.
+                            </p>
+                        </div>
+                        <h4 id="stage4">1.4 Stage 4</h4>
+                        <div>
+                            <p class="text-justify">
+                            The final blocking strategy and the most important one, is an rule based blocker on the bike name. The Bike name on both websites is a combination of the brand name, bike name and the engine size of the bike. Therefore, if 2 bikes are the same real world entity, they will have atleast one of the three things matching. This helps us cluster tuples very closely because now we will match only those tuples, that have bike/brand/engine size matching. Our final blocker reduced the candidate set to 18000 tuples. We used the jaccard-3-gram for matching with a non-aggresive threshold of 0.2.
+                            </p>
+                        </div>
+                        <h3 id="finaloutput">2. Final Output</h3>
+                        <div>
+                            <p class="text-justify">
+                                After applying the blocking step, tableC has 18000 tuples. This is very small as compared to the cartesian product of ~ 9 million. <br>
+                                Total time taken to do blocking was close to 6 hours. The main time consuming issue was the first blocking step because it has to go through all the 9 million tuple pairs. Running the blocking step on the first set took almost 20 minutes. A minor issue was to find a good threshold for 3-gram-jaccard measure. We iteratively derieved the value of threshold by examing the output for each threshold and checking if a potential tuple match has been blocked.
+                            </p>
+                        </div>
+                        <h3 id="magellanexperience">3. Magellan Experience</h3>
+                        <div>
+                            <p class="text-justify">
+                                Using Magellan as a tool for blocking was a relatively smooth experience for us. We did not face any issues while installing it and getting it ready for use with iPython. As a research prototype, magellan is awesome. However, for open source release, there are quite a few features that we would ideally like to see included for enhanced usability.
+                            </p>
+                        </div>
                     </div>
                     <h1 id="teamMembers" class="page-header">Team Members</h1>
                     <div class="panel panel-default">
@@ -104,6 +205,7 @@
                             <div class="col-md-6">
                                 Shaleen Deep<br/>
                                 shaleen@cs.wisc.edu<br/>
+                                +1 608-609-8303<br/>
                             </div>
                         </div>
                     </div>
@@ -114,9 +216,27 @@
                     <ul class="nav bs-docs-sidenav">
                         <li>
                             <a href="#deliverable1">Deliverable-1</a>
+                            <ul class="nav">
+                                <li>
+                                    <a href="#dataextraction">Data Extraction</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#deliverable2">Deliverable-2</a>
+                            <ul class="nav">
+                                <li><a href="#blocking">Blocking</a>
+                                <li><a href="#blockingsteps">Blocking Steps</a>
+                                    <ul class="nav">
+                                        <li><a href="#stage1">Stage 1</a></li>
+                                        <li><a href="#stage2">Stage 2</a></li>
+                                        <li><a href="#stage3">Stage 3</a></li>
+                                        <li><a href="#stage4">Stage 4</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#finaloutput">Final Output</a></li>
+                                <li><a href="#magellanexperience">Magellan Experience</a></li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#teamMembers">Team Members</a>
@@ -136,5 +256,6 @@
 <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/docs.min.js"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 </body>
 </html>
