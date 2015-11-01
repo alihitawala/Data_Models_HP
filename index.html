@@ -39,7 +39,7 @@
             popular Indian websites that let you buy and sell used bikes - <a href="http://www.bikedekho.com"style="color: #5bc0de">BikeDekho</a> and
             <a href="http://www.bikewale.com" style="color: #5bc0de">BikeWale </a>. Our goal is to
             extract relevant information from the both the websites and match them to find if the exact same bike is
-            being sold at a cheaper price on the other website. We have crawled 9216 Bikewale postings and about 10000
+            being sold at a cheaper price on the other website. We have crawled 9216 Bikewale postings and about 12363
             BikeDekho listings.</p>
 
         <p><a class="btn btn-primary btn-lg" href="#deliverable1" role="button">Deliverables</a></p>
@@ -116,13 +116,13 @@
                         <h3 id="blockingsteps">1. Blocking Steps</h3>
                         <div>
                             <p class="text-justify">
-                            The objective of this stage is to produce a candidate set after performing blocking operations. This is necessary because it is computationally very expensive to do a matching for all pairs. Our tableA has 9216 tuples and tableB had 10000 tuples. Therefore, a cartesian product of 9K x 10K is 9million which is a huge number of tuples. Therefore, we have a 4 stage blocking strategy.
+                            The objective of this stage is to produce a candidate set after performing blocking operations. This is necessary because it is computationally very expensive to do a matching for all pairs. Our tableA has 9216 tuples and tableB had 12363 tuples. Therefore, a cartesian product of 9K x 12K is 108 million which is a huge number of tuples. Therefore, we have a 4 stage blocking strategy.
                             </p>
                         </div>
                         <h4 id="stage1">1.1 Stage 1</h4>
                         <div>
                         <p class="text-justify">
-                            In the first stage we used city_posted as feature on an equivalence blocker. This is a good beginning strategy because both the websites had the same city naming conventions and the textual data matched exactly. However, tableA had a lot of ’cities’ that were actually suburban areas (much like Redmond is a part of Seattle). Therefore, before doing this step, we had to performa cleaning step to ensure that we were matching on the same subset of cities. We created a list of cities that were unique and scrubbed the dataset to merge all the suburbs into the respective city. For example, ’Kalyan’ is a station within the city of Mumbai.
+                            In the first stage we used city_posted as feature on an equivalence blocker. This is a good beginning strategy because both the websites had the same city naming conventions and the textual data matched exactly. However, tableA had a lot of ’cities’ that were actually suburban areas (much like Redmond is a part of Seattle). Therefore, before doing this step, we had to perform a cleaning step to ensure that we were matching on the same subset of cities. We created a list of cities that were unique and scrubbed the dataset to merge all the suburbs into the respective city. For example, ’Kalyan’ is a station within the city of Mumbai.
                         </p>
                         <h5>1.1.1 Cleaning of data</h5>
                         <p class="text-justify ">
@@ -159,7 +159,7 @@ where city_posted
 in ('Kalyan', 'Thane', ' Valsad', 'Dombilvli');
                         </pre>
                         <p class="text-justify">
-                            After the first blocking we reduced the tuple matches from 9 million to 5 million. However, this was too large since the maximum possible matches can only be as big as the size of the smaller table i.e 9216.
+                            After the first blocking we reduced the tuple matches from 108 million to 5 million. However, this was too large since the maximum possible matches can only be as big as the size of the smaller table i.e 9216.
                         </p>
                         </div>
                         <h4 id="stage2">1.2 Stage 2</h4>
@@ -171,20 +171,26 @@ in ('Kalyan', 'Thane', ' Valsad', 'Dombilvli');
                         <h4 id="stage3">1.3 Stage 3</h4>
                         <div>
                             <p class="text-justify">
-                                For the third stage, we did a blackbox blocker on the distance driven on the bike. We figured a good estimate would be a difference of 1000 kilometeres because it is possible that a user can enter a new bike ad on a different website after some time, during which the bike could have been used more. This strategy used our candidate set to 68000 tuples.
+                                For the third stage, we did a blackbox blocker on the distance driven on the bike. We figured a good estimate would be a difference of 1000 kilometeres because it is possible that a user can enter a new bike ad on a different website after some time, during which the bike could have been used more. This strategy reduced our candidate set to 68000 tuples.
                             </p>
                         </div>
                         <h4 id="stage4">1.4 Stage 4</h4>
                         <div>
                             <p class="text-justify">
-                            The final blocking strategy and the most important one, is an rule based blocker on the bike name. The Bike name on both websites is a combination of the brand name, bike name and the engine size of the bike. Therefore, if 2 bikes are the same real world entity, they will have atleast one of the three things matching. This helps us cluster tuples very closely because now we will match only those tuples, that have bike/brand/engine size matching. Our final blocker reduced the candidate set to 18000 tuples. We used the jaccard-3-gram for matching with a non-aggresive threshold of 0.2.
+                            This blocking strategy and the most important one, is an overlap blocker (on word=1) on the bike name. The Bike name on both websites is a combination of the brand name, bike name and the engine size of the bike. Therefore, if 2 bikes are the same real world entity, they will have atleast one of the three things matching. This helps us cluster tuples very closely because now we will match only those tuples, that have bike/brand/engine size matching. This reduced our candidate set 18000 tuples.
+                            </p>
+                        </div>
+                        <h4 id="stage5">1.5 Stage 5</h4>
+                        <div>
+                            <p class="text-justify">
+                                Our final blocker is the rule based blocker on the bike name that reduced the candidate set to 8000 tuples. We used the jaccard-3-gram for matching with a non-aggresive threshold of 0.2.
                             </p>
                         </div>
                         <h3 id="finaloutput">2. Final Output</h3>
                         <div>
                             <p class="text-justify">
-                                After applying the blocking step, tableC has 18000 tuples. This is very small as compared to the cartesian product of ~ 9 million. <br>
-                                Total time taken to do blocking was close to 6 hours. The main time consuming issue was the first blocking step because it has to go through all the 9 million tuple pairs. Running the blocking step on the first set took almost 20 minutes. A minor issue was to find a good threshold for 3-gram-jaccard measure. We iteratively derieved the value of threshold by examing the output for each threshold and checking if a potential tuple match has been blocked.
+                                After applying the blocking step, tableC has 8000 tuples. This is very small as compared to the cartesian product of ~ 108 million. <br>
+                                Total time taken to do blocking was close to 6 hours. The main time consuming issue was the second blocking step because it has to go through all the 5 million tuple pairs. Running the blocking step on the this set took almost 30 minutes for one run. A minor issue was to find a good threshold for 3-gram-jaccard measure. We iteratively derieved the value of threshold by examing the output for each threshold and checking if a potential tuple match has been blocked.
                             </p>
                         </div>
                         <h3 id="magellanexperience">3. Magellan Experience</h3>
@@ -232,6 +238,7 @@ in ('Kalyan', 'Thane', ' Valsad', 'Dombilvli');
                                         <li><a href="#stage2">Stage 2</a></li>
                                         <li><a href="#stage3">Stage 3</a></li>
                                         <li><a href="#stage4">Stage 4</a></li>
+                                        <li><a href="#stage5">Stage 5</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#finaloutput">Final Output</a></li>
