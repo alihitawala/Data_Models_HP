@@ -52,48 +52,52 @@
                     <h2 id="dataextraction">Data Extraction</h2>
                     <div class="btn-group btn-group-justified" role="group" aria-label="...">
                         <div class="btn-group" role="group">
-                            <a type="button" class="btn btn-success" href="http://pages.cs.wisc.edu/~shaleen/CS784/Data_model_page/html/BikeWale/html/" target="_blank">HTML Pages from website A</a>
+                            <a type="button" class="btn btn-info" href="http://pages.cs.wisc.edu/~shaleen/CS784/Data_model_page/html/BikeWale/html/" target="_blank">HTML Pages from website A</a>
                         </div>
                         <div class="btn-group" role="group">
-                            <a type="button" class="btn btn-info" href="http://pages.cs.wisc.edu/~shaleen/CS784/Data_model_page/html/BikeWale/Bikewale.csv" target="_blank">CSV generated from A</a>
+                            <a type="button" class="btn btn-success" href="http://pages.cs.wisc.edu/~shaleen/CS784/Data_model_page/html/BikeWale/Bikewale.csv" target="_blank">CSV generated from A</a>
                         </div>
                         <div class="btn-group" role="group">
-                            <a type="button" class="btn btn-success" href="http://pages.cs.wisc.edu/~shaleen/CS784/Data_model_page/html/BikeDekho/html/" target="_blank">HTML Pages from website B</a>
+                            <a type="button" class="btn btn-warning" href="http://pages.cs.wisc.edu/~shaleen/CS784/Data_model_page/html/BikeDekho/html/" target="_blank">HTML Pages from website B</a>
                         </div>
                         <div class="btn-group" role="group">
-                            <a type="button" class="btn btn-info" href="http://pages.cs.wisc.edu/~shaleen/CS784/Data_model_page/html/BikeDekho/BikeDekho.csv" target="_blank">CSV generated from B</a>
+                            <a type="button" class="btn btn-danger" href="http://pages.cs.wisc.edu/~shaleen/CS784/Data_model_page/html/BikeDekho/BikeDekho.csv" target="_blank">CSV generated from B</a>
                         </div>
                     </div>
-                    <div>
-                        <div class="col-md-6">
-                            <h2>Table schema for website A <a href="http://www.bikewale.com" class="btn btn-primary">Bikewale.com</a></h2>
-                            <ul class="list-group">
-                                <li class="list-group-item"><span class="badge">int</span><span class="badge">ID</span>id</li>
-                                <li class="list-group-item"><span class="badge">varchar</span>bike_name</li>
-                                <li class="list-group-item"><span class="badge">varchar</span>city_posted</li>
-                                <li class="list-group-item"><span class="badge">int</span>km_driven</li>
-                                <li class="list-group-item"><span class="badge">varchar</span>color</li>
-                                <li class="list-group-item"><span class="badge">varchar</span>fuel_type</li>
-                                <li class="list-group-item"><span class="badge">int</span>price</li>
-                                <li class="list-group-item"><span class="badge">int</span>model_year</li>
-                                <li class="list-group-item"><span class="badge">varchar</span>owner_type</li>
-                                <li class="list-group-item"><span class="badge">varchar</span>url</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <h2>Table schema for website B <a href="http://www.bikedekho.com" class="btn btn-primary">BikeDekho.com</a></h2>
-                            <ul class="list-group">
-                                <li class="list-group-item"><span class="badge">int</span><span class="badge">ID</span>id</li>
-                                <li class="list-group-item"><span class="badge">varchar</span>bike_name</li>
-                                <li class="list-group-item"><span class="badge">varchar</span>city_posted</li>
-                                <li class="list-group-item"><span class="badge">int</span>km_driven</li>
-                                <li class="list-group-item"><span class="badge">varchar</span>color</li>
-                                <li class="list-group-item"><span class="badge">varchar</span>fuel_type</li>
-                                <li class="list-group-item"><span class="badge">int</span>price</li>
-                                <li class="list-group-item"><span class="badge">int</span>model_year</li>
-                                <li class="list-group-item"><span class="badge">varchar</span>owner_type</li>
-                                <li class="list-group-item"><span class="badge">varchar</span>url</li>
-                            </ul>
+                    <br/>
+                    <a type="button" class="btn btn-success" data-toggle="collapse" data-target="#d1">View Details</a>
+                    <div id="d1" class="collapse">
+                        <div>
+                            <div class="col-md-6">
+                                <h2>Table schema for website A <a href="http://www.bikewale.com" class="btn btn-primary">Bikewale.com</a></h2>
+                                <ul class="list-group">
+                                    <li class="list-group-item"><span class="badge">int</span><span class="badge">ID</span>id</li>
+                                    <li class="list-group-item"><span class="badge">varchar</span>bike_name</li>
+                                    <li class="list-group-item"><span class="badge">varchar</span>city_posted</li>
+                                    <li class="list-group-item"><span class="badge">int</span>km_driven</li>
+                                    <li class="list-group-item"><span class="badge">varchar</span>color</li>
+                                    <li class="list-group-item"><span class="badge">varchar</span>fuel_type</li>
+                                    <li class="list-group-item"><span class="badge">int</span>price</li>
+                                    <li class="list-group-item"><span class="badge">int</span>model_year</li>
+                                    <li class="list-group-item"><span class="badge">varchar</span>owner_type</li>
+                                    <li class="list-group-item"><span class="badge">varchar</span>url</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h2>Table schema for website B <a href="http://www.bikedekho.com" class="btn btn-primary">BikeDekho.com</a></h2>
+                                <ul class="list-group">
+                                    <li class="list-group-item"><span class="badge">int</span><span class="badge">ID</span>id</li>
+                                    <li class="list-group-item"><span class="badge">varchar</span>bike_name</li>
+                                    <li class="list-group-item"><span class="badge">varchar</span>city_posted</li>
+                                    <li class="list-group-item"><span class="badge">int</span>km_driven</li>
+                                    <li class="list-group-item"><span class="badge">varchar</span>color</li>
+                                    <li class="list-group-item"><span class="badge">varchar</span>fuel_type</li>
+                                    <li class="list-group-item"><span class="badge">int</span>price</li>
+                                    <li class="list-group-item"><span class="badge">int</span>model_year</li>
+                                    <li class="list-group-item"><span class="badge">varchar</span>owner_type</li>
+                                    <li class="list-group-item"><span class="badge">varchar</span>url</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <h1 id="deliverable2" class="page-header">Deliverable-2</h1>
@@ -105,170 +109,192 @@
                         <div class="btn-group" role="group">
                             <a type="button" class="btn btn-success" href="../Data_model_page/after_city_model_km_bikeName_ruleBN.csv" target="_blank">CSV data after blocking</a>
                         </div>
-                        
+
                         <div class="btn-group" role="group">
                             <a type="button" class="btn btn-warning" href="../Data_model_page/Blocking_Notebook.html" target="_blank">IPython HTML</a>
                         </div>
-			
+
                         <div class="btn-group" role="group">
-                            <a type="button" class="btn btn-danger" href="../Data_model_page/Blocking_Notebook.ipynb" target="_blank">IPython Notebook</a>
+                            <a type="button" class="btn btn-danger" href="../Data_model_page/Blocking_Notebook.ipynb" target="_blank">IPython Notebook - Blocking</a>
                         </div>
                     </div>
-                    <div>
-                        <h3 id="one">1. How did you develop the blocker?</h3>
-                        <h4 id="two">1.1 What blocker did you start with?</h4>
-                        <div>
-                            <p class="text-justify">
-                                Our initial approach to building the blocker turned out to be correct. We focused on eliminating only the surely non matching pairs. Therefore, the first step of equivalence blocking on city and model year were intuitive. The tricky part was to understand how to use the bike_distance attribute for blocking. Based on our own experience of selling bikes in India, as well other people have sold bikes in India before moving here, we found about how people post multiple advertisements for the same bike across different websites. This helped us reach our heuristic of 1000 km. as explained in Stage 3 above.
-                            </p>
-                        </div>
-                        <h4 id="three">1.2 What problems did you see?</h4>
-                        <div>
-                            <ul>
-                            <li>
-                                The blocker for our stage-2 ran very slow and took almost 30 minutes to complete. We used a feature in Magellan to save the output to the csv so that we don't have to run it again.
-                            </li>
-                            <li>
-                                Another minor issue was to find a good threshold for 3-gram-jaccard measure for our last step. We iteratively derieved the value of threshold by examing the output for each threshold and checking if a potential tuple match has been blocked, if so, we reduced the threshold value and checked again.
-                            </li>
-                            <li>
-                                We used Magellan debugger to make sure that at each step, we do not miss any true positives and only eliminate the surely non-matching pairs. Based on the results from the debugger, we iteratively developed our blocker for each stage as described below.
-                            </li>
-                        </ul>
-                        </div>
-                        <h4 id="four">1.3 Final blocker</h4>
-                        <div>
-                            <p class="text-justify">
-                            The objective of this stage is to produce a candidate set after performing blocking operations. This is necessary because it is computationally very expensive to do a matching for all pairs. Our tableA has 9216 tuples and tableB had 12363 tuples. Therefore, a cartesian product of 9K x 12K is 108 million which is a huge number of tuples. Therefore, we have a 4 stage blocking strategy.
-                            </p>
-                        </div>
-                        <h4 id="stage1">1.3.1 Stage 1</h4>
-                        <div>
-                        <p class="text-justify">
-                            In the first stage we used city_posted as feature on an equivalence blocker. This is a good beginning strategy because both the websites had the same city naming conventions and the textual data matched exactly.
-                            After the first blocking we reduced the tuple matches from 108 million to 5 million. However, this was too large since the maximum possible matches can only be as big as the size of the smaller table i.e 9216.
-                        </p>
-                        </div>
-                        <h4 id="stage2">1.3.2 Stage 2</h4>
-                        <div>
-                            <p class="text-justify">
-                                For the second stage, we did attribute equivalence blocking on the model year of the bike. This was straight forward as there were no missing values. This blocker reduced our candidate set from 5 million to 1.19 million.
-                            </p>
-                        </div>
-                        <h4 id="stage3">1.3.3 Stage 3</h4>
-                        <div>
-                            <p class="text-justify">
-                                For the third stage, we did a blackbox blocker on the distance driven on the bike. We figured a good estimate would be a difference of 1000 kilometeres because it is possible that a user can enter a new bike ad on a different website after some time, during which the bike could have been used more. This strategy reduced our candidate set to 68000 tuples.
-                            </p>
-                        </div>
-                        <h4 id="stage4">1.3.4 Stage 4</h4>
-                        <div>
-                            <p class="text-justify">
-                            This blocking strategy and the most important one, is an overlap blocker (on word=1) on the bike name. The Bike name on both websites is a combination of the brand name, bike name and the engine size of the bike. Therefore, if 2 bikes are the same real world entity, they will have atleast one of the three things matching. This helps us cluster tuples very closely because now we will match only those tuples, that have bike/brand/engine size matching. This reduced our candidate set 18000 tuples.
-                            </p>
-                        </div>
-                        <h4 id="stage5">1.3.5 Stage 5</h4>
-                        <div>
-                            <p class="text-justify">
-                                Our final blocker is the rule based blocker on the bike name that reduced the candidate set to 8000 tuples. We used the jaccard-3-gram for matching with a non-aggresive threshold of 0.2.
-                            </p>
-                        </div>
-                        <img src="DM2.png" class="img-responsive">
-                        <h3 id="finaloutput">2. Final Output</h3>
-                        <div>
-                            <p class="text-justify">
-                                After applying the blocking step, tableC has 8009 tuples. This is very small as compared to the cartesian product of ~ 108 million.
-                            </p>
-                        </div>
-                        <h3 id="cleaning">3. Additional Cleaning</h3>
-                        <p class="text-justify">
-                            For Stage 1, tableA had a lot of ’cities’ that were actually suburban areas (much like Redmond is a part of Seattle). Therefore, before doing this step, we had to perform a cleaning step to ensure that we were matching on the same subset of cities. We created a list of cities that were unique and scrubbed the dataset to merge all the suburbs into the respective city. For example, ’Kalyan’ is a station within the city of Mumbai.
-                        </p>
-                        <p class="text-justify ">
-                            We have listed the SQL queries below that we used to clean the data.
-                        </p>
-                        <pre class="prettyprint lang-sql">
-UPDATE Bikewale_clean
-set city_posted = ’Delhi'
-where city_posted
-in ('New Delhi' ,'Dadri' ,' Faridabad' ,'Ghaziabad' ,'Gurgaon' ,'Bahadurgarh' ,'Modi Nagar' ,'Noida');
-                        </pre>
-                        <pre class="prettyprint lang-sql">
-UPDATE Bikewale_clean
-set city_posted = ’Mumbai'
-where city_posted
-in ('Kalyan', 'Navi Mumbai', ' Panvel', 'Thane');
-                        </pre>
-                        <pre class="prettyprint lang-sql">
-UPDATE Bikewale_clean
-set city_posted = ’Bangalore'
-where city_posted
-in ('Hosur', 'Hoskote', 'Tumkur');
-                        </pre>
-                        <pre class="prettyprint lang-sql">
-UPDATE BikeDekho_clean
-set city_posted = ’Delhi'
-where city_posted
-in ('Delhi', 'Noida');
-                        </pre>
-                        <pre class="prettyprint lang-sql">
-UPDATE BikeDekho_clean
-set city_posted = ’Mumbai'
-where city_posted
-in ('Kalyan', 'Thane', ' Valsad', 'Dombilvli');
-                        </pre>
-                        <h3 id="timetaken">4. Time taken</h3>
-                        <div>
-                            <p class="text-justify">
-                                Total time taken to do blocking was close to 6 hours.
-                                <ul>
-                                    <li>
-                                        The main time consuming issue was the first blocking step because it has to go through all the 9 million tuple pairs. Running the blocking step on the first set took almost 30 minutes.
-                                    </li>
-                                    <li>A minor issue was to find a good threshold for 3-gram-jaccard measure. We iteratively derieved the value of threshold by examing the output for each threshold and checking if a potential tuple match has been blocked.
-                                    </li>
-                                </ul>
-                            </p>
-                        </div>
+                    <br/>
+                    <a type="button" class="btn btn-success" data-toggle="collapse" data-target="#d2">View Details</a>
+                    <div id="d2" class="collapse">
 
-                        <h3 id="magellanexperience">5. Magellan Experience</h3>
                         <div>
-                            <p class="text-justify">
-                                Using Magellan as a tool for blocking was a relatively smooth experience for us. We did not face any issues while installing it and getting it ready for use with iPython. As a research prototype, magellan is awesome. However, for open source release, there are quite a few features that we would ideally like to see included for enhanced usability.
-                            </p>
-                        </div>
-
-                        <h4 id="debugger">5.1 Use of debugger</h4>
-                        <div>
-                            <p class="text-justify">
-                                We used the debugger after each stage to make sure that we do not miss any actual pairs that were matching. We only removed those pairs that were surely non-matching.
-                            </p>
-                        </div>
-                        <h4 id="extend">5.2 Features that we can extend</h4>
-                        <div>
-                            <ul>
-                                <li><p class="text-justify">
-                                    <b>Exception Handling: </b>We ran to issues where we see generic exception like ’Column qualifies to be more than one type’. This error, for example, is thrown in attributeutils.py which contains all the relevant information about which columns are colliding and what are their respective type. Ideally, this information should be included in the stacktrace that bubbles up.
-                                    </p>
-                                </li>
-                                <li><p class="text-justify">
-                                    <b>Java 1.8 Migration: </b>Java 1.6 is end of life and Oracle will not have support for this in a few months from now. Therefore, Java 1.8 migration needs to be prioritized.
+                            <h3 id="one">1. How did you develop the blocker?</h3>
+                            <h4 id="two">1.1 What blocker did you start with?</h4>
+                            <div>
+                                <p class="text-justify">
+                                    Our initial approach to building the blocker turned out to be correct. We focused on eliminating only the surely non matching pairs. Therefore, the first step of equivalence blocking on city and model year were intuitive. The tricky part was to understand how to use the bike_distance attribute for blocking. Based on our own experience of selling bikes in India, as well other people have sold bikes in India before moving here, we found about how people post multiple advertisements for the same bike across different websites. This helped us reach our heuristic of 1000 km. as explained in Stage 3 above.
                                 </p>
+                            </div>
+                            <h4 id="three">1.2 What problems did you see?</h4>
+                            <div>
+                                <ul>
+                                <li>
+                                    The blocker for our stage-2 ran very slow and took almost 30 minutes to complete. We used a feature in Magellan to save the output to the csv so that we don't have to run it again.
                                 </li>
-                                <li><p class="text-justify">
-                                    <b>Overlap Blocker issues: </b>There are 2 points that we wish to highlight in Overlap Blocker implementation.
-                                    <ul>
-                                        <li>block_candset method does not take l_output_attrs and r_output_attrs, even though the code comments seem to indicate that.
-                                        </li>
-                                        <li>Overlap blocker does not functionality for case sensitive/insensitive match of attributes. This is easy to implement and would be a good feature to add since data is almost always noisy specially with respect to case sensitivity.
-                                        </li>
-                                        <li>process_val method uses only string split by space. We wanted to use a split by comma but there is no way to specify tokenizing delimiter.
-                                        </li>
-                                    </ul>
-                                    </p>
+                                <li>
+                                    Another minor issue was to find a good threshold for 3-gram-jaccard measure for our last step. We iteratively derieved the value of threshold by examing the output for each threshold and checking if a potential tuple match has been blocked, if so, we reduced the threshold value and checked again.
+                                </li>
+                                <li>
+                                    We used Magellan debugger to make sure that at each step, we do not miss any true positives and only eliminate the surely non-matching pairs. Based on the results from the debugger, we iteratively developed our blocker for each stage as described below.
                                 </li>
                             </ul>
-                            As a part of the final phases of the project, we plan to incorporate these features in the code base along with the relevant test cases.
+                            </div>
+                            <h4 id="four">1.3 Final blocker</h4>
+                            <div>
+                                <p class="text-justify">
+                                The objective of this stage is to produce a candidate set after performing blocking operations. This is necessary because it is computationally very expensive to do a matching for all pairs. Our tableA has 9216 tuples and tableB had 12363 tuples. Therefore, a cartesian product of 9K x 12K is 108 million which is a huge number of tuples. Therefore, we have a 4 stage blocking strategy.
+                                </p>
+                            </div>
+                            <h4 id="stage1">1.3.1 Stage 1</h4>
+                            <div>
+                            <p class="text-justify">
+                                In the first stage we used city_posted as feature on an equivalence blocker. This is a good beginning strategy because both the websites had the same city naming conventions and the textual data matched exactly.
+                                After the first blocking we reduced the tuple matches from 108 million to 5 million. However, this was too large since the maximum possible matches can only be as big as the size of the smaller table i.e 9216.
+                            </p>
+                            </div>
+                            <h4 id="stage2">1.3.2 Stage 2</h4>
+                            <div>
+                                <p class="text-justify">
+                                    For the second stage, we did attribute equivalence blocking on the model year of the bike. This was straight forward as there were no missing values. This blocker reduced our candidate set from 5 million to 1.19 million.
+                                </p>
+                            </div>
+                            <h4 id="stage3">1.3.3 Stage 3</h4>
+                            <div>
+                                <p class="text-justify">
+                                    For the third stage, we did a blackbox blocker on the distance driven on the bike. We figured a good estimate would be a difference of 1000 kilometeres because it is possible that a user can enter a new bike ad on a different website after some time, during which the bike could have been used more. This strategy reduced our candidate set to 68000 tuples.
+                                </p>
+                            </div>
+                            <h4 id="stage4">1.3.4 Stage 4</h4>
+                            <div>
+                                <p class="text-justify">
+                                This blocking strategy and the most important one, is an overlap blocker (on word=1) on the bike name. The Bike name on both websites is a combination of the brand name, bike name and the engine size of the bike. Therefore, if 2 bikes are the same real world entity, they will have atleast one of the three things matching. This helps us cluster tuples very closely because now we will match only those tuples, that have bike/brand/engine size matching. This reduced our candidate set 18000 tuples.
+                                </p>
+                            </div>
+                            <h4 id="stage5">1.3.5 Stage 5</h4>
+                            <div>
+                                <p class="text-justify">
+                                    Our final blocker is the rule based blocker on the bike name that reduced the candidate set to 8000 tuples. We used the jaccard-3-gram for matching with a non-aggresive threshold of 0.2.
+                                </p>
+                            </div>
+                            <img src="DM2.png" class="img-responsive">
+                            <h3 id="finaloutput">2. Final Output</h3>
+                            <div>
+                                <p class="text-justify">
+                                    After applying the blocking step, tableC has 8009 tuples. This is very small as compared to the cartesian product of ~ 108 million.
+                                </p>
+                            </div>
+                            <h3 id="cleaning">3. Additional Cleaning</h3>
+                            <p class="text-justify">
+                                For Stage 1, tableA had a lot of ’cities’ that were actually suburban areas (much like Redmond is a part of Seattle). Therefore, before doing this step, we had to perform a cleaning step to ensure that we were matching on the same subset of cities. We created a list of cities that were unique and scrubbed the dataset to merge all the suburbs into the respective city. For example, ’Kalyan’ is a station within the city of Mumbai.
+                            </p>
+                            <p class="text-justify ">
+                                We have listed the SQL queries below that we used to clean the data.
+                            </p>
+                            <pre class="prettyprint lang-sql">
+    UPDATE Bikewale_clean
+    set city_posted = ’Delhi'
+    where city_posted
+    in ('New Delhi' ,'Dadri' ,' Faridabad' ,'Ghaziabad' ,'Gurgaon' ,'Bahadurgarh' ,'Modi Nagar' ,'Noida');
+                            </pre>
+                            <pre class="prettyprint lang-sql">
+    UPDATE Bikewale_clean
+    set city_posted = ’Mumbai'
+    where city_posted
+    in ('Kalyan', 'Navi Mumbai', ' Panvel', 'Thane');
+                            </pre>
+                            <pre class="prettyprint lang-sql">
+    UPDATE Bikewale_clean
+    set city_posted = ’Bangalore'
+    where city_posted
+    in ('Hosur', 'Hoskote', 'Tumkur');
+                            </pre>
+                            <pre class="prettyprint lang-sql">
+    UPDATE BikeDekho_clean
+    set city_posted = ’Delhi'
+    where city_posted
+    in ('Delhi', 'Noida');
+                            </pre>
+                            <pre class="prettyprint lang-sql">
+    UPDATE BikeDekho_clean
+    set city_posted = ’Mumbai'
+    where city_posted
+    in ('Kalyan', 'Thane', ' Valsad', 'Dombilvli');
+                            </pre>
+                            <h3 id="timetaken">4. Time taken</h3>
+                            <div>
+                                <p class="text-justify">
+                                    Total time taken to do blocking was close to 6 hours.
+                                    <ul>
+                                        <li>
+                                            The main time consuming issue was the first blocking step because it has to go through all the 9 million tuple pairs. Running the blocking step on the first set took almost 30 minutes.
+                                        </li>
+                                        <li>A minor issue was to find a good threshold for 3-gram-jaccard measure. We iteratively derieved the value of threshold by examing the output for each threshold and checking if a potential tuple match has been blocked.
+                                        </li>
+                                    </ul>
+                                </p>
+                            </div>
+
+                            <h3 id="magellanexperience">5. Magellan Experience</h3>
+                            <div>
+                                <p class="text-justify">
+                                    Using Magellan as a tool for blocking was a relatively smooth experience for us. We did not face any issues while installing it and getting it ready for use with iPython. As a research prototype, magellan is awesome. However, for open source release, there are quite a few features that we would ideally like to see included for enhanced usability.
+                                </p>
+                            </div>
+
+                            <h4 id="debugger">5.1 Use of debugger</h4>
+                            <div>
+                                <p class="text-justify">
+                                    We used the debugger after each stage to make sure that we do not miss any actual pairs that were matching. We only removed those pairs that were surely non-matching.
+                                </p>
+                            </div>
+                            <h4 id="extend">5.2 Features that we can extend</h4>
+                            <div>
+                                <ul>
+                                    <li><p class="text-justify">
+                                        <b>Exception Handling: </b>We ran to issues where we see generic exception like ’Column qualifies to be more than one type’. This error, for example, is thrown in attributeutils.py which contains all the relevant information about which columns are colliding and what are their respective type. Ideally, this information should be included in the stacktrace that bubbles up.
+                                        </p>
+                                    </li>
+                                    <li><p class="text-justify">
+                                        <b>Java 1.8 Migration: </b>Java 1.6 is end of life and Oracle will not have support for this in a few months from now. Therefore, Java 1.8 migration needs to be prioritized.
+                                    </p>
+                                    </li>
+                                    <li><p class="text-justify">
+                                        <b>Overlap Blocker issues: </b>There are 2 points that we wish to highlight in Overlap Blocker implementation.
+                                        <ul>
+                                            <li>block_candset method does not take l_output_attrs and r_output_attrs, even though the code comments seem to indicate that.
+                                            </li>
+                                            <li>Overlap blocker does not functionality for case sensitive/insensitive match of attributes. This is easy to implement and would be a good feature to add since data is almost always noisy specially with respect to case sensitivity.
+                                            </li>
+                                            <li>process_val method uses only string split by space. We wanted to use a split by comma but there is no way to specify tokenizing delimiter.
+                                            </li>
+                                        </ul>
+                                        </p>
+                                    </li>
+                                </ul>
+                                As a part of the final phases of the project, we plan to incorporate these features in the code base along with the relevant test cases.
+                            </div>
+                        </div>
+
+                    </div>
+                    <h1 id="deliverable3" class="page-header">Deliverable-3</h1>
+                    <h2 id="datamatching">Data Matching</h2>
+                    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                        <div class="btn-group" role="group">
+                            <a type="button" class="btn btn-info" href="http://pages.cs.wisc.edu/~shaleen/CS784/Data_model_page/html/BikeWale/html/" target="_blank">Interim Report PDF</a>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <a type="button" class="btn btn-success" href="http://pages.cs.wisc.edu/~shaleen/CS784/Data_model_page/html/BikeWale/Bikewale.csv" target="_blank">Golden labeled data CSV</a>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <a type="button" class="btn btn-warning" href="http://pages.cs.wisc.edu/~shaleen/CS784/Data_model_page/html/BikeDekho/html/" target="_blank">IPython Notebook - Matching</a>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <a type="button" class="btn btn-danger" href="http://pages.cs.wisc.edu/~shaleen/CS784/Data_model_page/html/BikeDekho/BikeDekho.csv" target="_blank">All files - ZIP</a>
                         </div>
                     </div>
                     <h1 id="teamMembers" class="page-header">Team Members</h1>
@@ -324,6 +350,9 @@ in ('Kalyan', 'Thane', ' Valsad', 'Dombilvli');
                                     </ul>
                                 </li>
                             </ul>
+                        </li>
+                        <li>
+                            <a href="#deliverable3">Deliverable-3</a>
                         </li>
                         <li>
                             <a href="#teamMembers">Team Members</a>
